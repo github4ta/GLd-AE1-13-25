@@ -4,7 +4,7 @@ public class Utils {
         System.out.println("Hello from Lapitskaya!");
     }
 }
-public void printHelloFromTsarik() {
+public void printHelloFromSukhadolskaya() {
     System.out.println("Hello from Sukhadolskaya!");
 }
 }
