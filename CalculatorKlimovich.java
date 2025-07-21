@@ -1,5 +1,4 @@
 public class CalculatorKlimovich {
-    int number;
 
     int sum(int a, int b) {
         return a + b;

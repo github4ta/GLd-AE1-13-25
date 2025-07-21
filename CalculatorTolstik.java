@@ -1,4 +1,4 @@
-public class CalculatroTolstik {
+public class CalculatorTolstik {
 
     int a, b;
 

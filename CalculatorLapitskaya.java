@@ -1,17 +1,17 @@
 public class CalculatorLapitskaya {
-    public int AddNumbers(int a, int b) {
+    public int addNumbers(int a, int b) {
         return a + b;
     }
 
-    public int SubstractNumbers(int a, int b) {
+    public int substractNumbers(int a, int b) {
         return a - b;
     }
 
-    public double DivideNumbers(int a, int b) {
+    public double divideNumbers(int a, int b) {
         return a / b;
     }
 
-    public int MultipleNumbers(int a, int b) {
+    public int multipleNumbers(int a, int b) {
         return a * b;
     }
 }

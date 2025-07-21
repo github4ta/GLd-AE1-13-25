@@ -7,7 +7,7 @@ public class CalculatorGalnykin {
         return a - b;
     }
 
-    public int multiply(int a, int a) {
+    public int multiply(int a, int b) {
         return a * b;
     }
 
