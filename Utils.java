@@ -1,7 +1,7 @@
 public class Utils {
 
-    public void printHelloFromTsarik() {
-        System.out.println("Hello from Lapitskaya!");
+    public void printHelloFromGalnykin() {
+        System.out.println("Here is my Hello string for All");
     }
 }
 public void printHelloFromSukhadolskaya() {
