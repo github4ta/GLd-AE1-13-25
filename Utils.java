@@ -3,10 +3,6 @@ public class Utils {
         System.out.println(" Hello from Sergei");
     }
 
-    public void printHelloTsarik() {
-        System.out.println(" Hello from Sergei");
-    }
-
     public void printHelloFromGalnykin() {
         System.out.println("Here is my Hello string for All");
     }
