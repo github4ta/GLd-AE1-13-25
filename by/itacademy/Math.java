@@ -6,7 +6,7 @@ public class Math {
     }
 
     public static int getAreaOfRectangle(int a, int b) {
-        return  2 * (a + b);
+        return 2 * (a + b);
     }
 
     public static double trapezoidArea(int a, int b, int height) {
@@ -15,4 +15,5 @@ public class Math {
 
     public static int rectangleArea(int a, int b) {
         return a * b;
+    }
 }
