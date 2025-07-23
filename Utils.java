@@ -26,4 +26,8 @@ public class Utils {
     public static void printHelloFromLapitskaya() {
         System.out.println("Hello from Lapitskaya!");
     }
+
+    public static void printHelloFromKlimovich() {
+        System.out.println("Hello from Klimovich!");
+    }
 }
