@@ -50,7 +50,6 @@ public class Math {
             left++;
             right--;
         }
-
         return true;
     }
 }
