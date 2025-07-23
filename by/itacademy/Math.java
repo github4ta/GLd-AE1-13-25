@@ -1,13 +1,12 @@
 package by.itacademy;
 
 public class Math {
-    public static int perimeterOfTriangle(int a, int b, int c) {
+    public static int calculateTrianglePerimeter(int a, int b, int c) {
         return a + b + c;
     }
 
-    public static void getAreaOfRectangle(int a, int b) {
-        int p = 2 * (a + b);
-        System.out.println("Периметр прямоугольника " + p);
+    public static int getPerimeterOfRectangle(int a, int b) {
+        return 2 * (a + b);
     }
 
     public static double trapezoidArea(int a, int b, int height) {
@@ -22,7 +21,17 @@ public class Math {
         return a * b;
     }
 
-    public static double circleLength(int radius) {
+    public static double calculateCircleLength(int radius) {
         return 2 * java.lang.Math.PI * radius;
     }
- }
+
+    public static double triangleArea(int a, int b, int c) {
+        double s = (a + b + c) / 2.0;
+        double area = java.lang.Math.sqrt(s * (s - a) * (s - b) * (s - c));
+        return area;
+    }
+
+    public static double squareOfCircler(int radius) {
+        return radius * radius * java.lang.Math.PI;
+    }
+}
