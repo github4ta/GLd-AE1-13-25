@@ -17,7 +17,7 @@ public class Math {
         return base * height;
     }
 
-    public static int rectangleArea(int a, int b) {
+    public static int calculateRectangleArea(int a, int b) {
         return a * b;
     }
 
