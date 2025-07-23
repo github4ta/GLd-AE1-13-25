@@ -5,7 +5,7 @@ public class Math {
         return a + b + c;
     }
 
-    public static int gePerimeterOfRectangle(int a, int b) {
+    public static int getPerimeterOfRectangle(int a, int b) {
         return 2 * (a + b);
     }
 
