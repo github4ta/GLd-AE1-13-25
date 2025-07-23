@@ -5,7 +5,7 @@ public class Math {
         return a + b + c;
     }
 
-    public static int gePerimeterOfRectangle(int a, int b) {
+    public static int getPerimeterOfRectangle(int a, int b) {
         return 2 * (a + b);
     }
 
@@ -21,7 +21,7 @@ public class Math {
         return a * b;
     }
 
-    public static double circleLength(int radius) {
+    public static double calculateCircleLength(int radius) {
         return 2 * java.lang.Math.PI * radius;
     }
 
@@ -29,5 +29,9 @@ public class Math {
         double s = (a + b + c) / 2.0;
         double area = java.lang.Math.sqrt(s * (s - a) * (s - b) * (s - c));
         return area;
+    }
+
+    public static double squareOfCircler(int radius) {
+        return radius * radius * java.lang.Math.PI;
     }
 }
