@@ -12,7 +12,7 @@ public class Math {
         System.out.println("Периметр прямоугольника " + p);
     }
 
-    public static int rectangleArea(int a, int b) {
-        return a * b;
+    public double trapezoidArea(int a, int b, int height) {
+        return (double) ((a + b) * height) / 2;
     }
 }
