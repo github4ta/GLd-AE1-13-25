@@ -25,7 +25,7 @@ public class Math {
     public static double circleLength(int radius) {
         return 2 * java.lang.Math.PI * radius;
     }
- }
+
     public static double triangleArea(int a, int b, int c) {
         double s = (a + b + c) / 2.0;
         double area = java.lang.Math.sqrt(s * (s - a) * (s - b) * (s - c));
