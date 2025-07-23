@@ -3,8 +3,8 @@ public class Utils {
         System.out.println(" Hello from Sergei");
     }
 
-    public void printHelloFromGalnykin() {
-        System.out.println("Here from Galnykin!");
+    public static void printHelloFromGalnykin() {
+        System.out.println("Hello from Galnykin!");
     }
 
     public void printHelloFromBogdanovich() {
