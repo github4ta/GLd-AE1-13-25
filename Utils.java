@@ -4,7 +4,7 @@ public class Utils {
     }
 
     public void printHelloFromGalnykin() {
-        System.out.println("Here is my Hello string for All");
+        System.out.println("Here from Galnykin!");
     }
 
     public void printHelloFromBogdanovich() {
