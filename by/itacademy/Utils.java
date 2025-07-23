@@ -16,6 +16,7 @@ public class Utils {
         String stringYear = String.valueOf(year);
         return stringMonth + "-" + stringDay + "-" +stringYear;
     }
+
     public static String generateEmail(String name, String surname) {
         String email = name.toLowerCase() + "." + surname.toLowerCase() + "@gmail.com";
         return email;
