@@ -17,8 +17,9 @@ public class Math {
     public static int rectangleArea(int a, int b) {
         return a * b;
     }
- }
+
     public static double circleLength(int radius) {
         return 2 * java.lang.Math.PI * radius;
     }
-}
+ }
+
