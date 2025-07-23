@@ -17,6 +17,11 @@ public class Utils {
         return stringMonth + "-" + stringDay + "-" +stringYear;
     }
 
+    public static String generateEmail(String name, String surname) {
+        String email = name.toLowerCase() + "." + surname.toLowerCase() + "@gmail.com";
+        return email;
+    }
+
     public static boolean isPalindrome(String str) {
         if (str == null) {
             return false;
