@@ -31,7 +31,7 @@ public class Math {
         return area;
     }
 
-    public static double squareOfCircler(int radius) {
+    public static double calculateCircelrArea(int radius) {
         return radius * radius * java.lang.Math.PI;
     }
 }
