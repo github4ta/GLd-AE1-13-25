@@ -1,5 +1,5 @@
 public class CalculatorGalnykin {
-    public int sub(int a, int b) {
+    public int sum(int a, int b) {
         return a + b;
     }
 
