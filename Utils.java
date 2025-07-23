@@ -1,5 +1,5 @@
 public class Utils {
-    public void printHelloFromZavizion() {
+    public static void printHelloFromZavizion() {
         System.out.println("Hello from Zavizion!");
     }
 
