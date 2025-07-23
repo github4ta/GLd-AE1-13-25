@@ -38,4 +38,7 @@ public class Utils {
         }
         return true;
     }
+    public static String lineInput(String str) {
+        return str.substring( 1).toUpperCase();
+    }
 }
