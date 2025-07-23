@@ -1,6 +1,10 @@
 package by.itacademy;
 
 public class Math {
+    public static double circleArea(double radius) {
+        return radius * radius * java.lang.Math.PI;
+    }
+
     public static int perimeterOfTriangle(int a, int b, int c) {
         return a + b + c;
     }
