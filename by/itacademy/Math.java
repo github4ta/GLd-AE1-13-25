@@ -7,8 +7,8 @@ public class Math {
         return perimeter;
     }
 
-    public static double getAreaOfRectangle(double a, double b) {
-        return 2 * (a + b);
+    public static int getAreaOfRectangle(int a, int b) {
+        return  2 * (a + b);
     }
 
     public double trapezoidArea(int a, int b, int height) {
