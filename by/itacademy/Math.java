@@ -30,4 +30,8 @@ public class Math {
         double area = java.lang.Math.sqrt(s * (s - a) * (s - b) * (s - c));
         return area;
     }
+
+    public static double squareOfCircler(int radius) {
+        return radius * radius * java.lang.Math.PI;
+    }
 }
