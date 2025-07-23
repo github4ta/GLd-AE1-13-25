@@ -15,6 +15,10 @@ public class Utils {
         System.out.println("Hello from Sukhadolskaya!");
     }
 
+    public void printHelloFromTolstik() {
+        System.out.println("Hello from Tolstik!");
+    }
+
     public void printHelloFromLaptsionak() {
         System.out.println("Hello from Laptsionak!");
     }
