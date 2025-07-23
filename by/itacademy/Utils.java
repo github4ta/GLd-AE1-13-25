@@ -15,7 +15,27 @@ public class Utils {
         String stringYear = String.valueOf(year);
         return stringMonth + "-" + stringDay + "-" +stringYear;
     }
-    public static String lineInput(String str) {
-        return str.substring(0,1).toUpperCase();
+
+    public static String generateEmail(String name, String surname) {
+        String email = name.toLowerCase() + "." + surname.toLowerCase() + "@gmail.com";
+        return email;
+    }
+
+    public static boolean isPalindrome(String str) {
+        if (str == null) {
+            return false;
+        }
+
+        int left = 0;
+        int right = str.length() - 1;
+
+        while (left < right) {
+            if (str.charAt(left) != str.charAt(right)) {
+                return false;
+            }
+            left++;
+            right--;
+        }
+        return true;
     }
 }
