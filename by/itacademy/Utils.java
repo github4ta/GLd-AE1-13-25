@@ -13,7 +13,6 @@ public class Utils {
         String stringDay = String.format("%02d", day);
         String stringMonth = String.format("%02d", month);
         String stringYear = String.valueOf(year);
-        String result = stringMonth + "-" + stringDay + "-" +stringYear;
-        return result;
+        return stringMonth + "-" + stringDay + "-" +stringYear;
     }
 }
