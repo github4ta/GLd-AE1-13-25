@@ -13,6 +13,10 @@ public class Math {
         return (double) ((a + b) * height) / 2;
     }
 
+    public static double parallelogramArea(double base, double height) {
+        return base * height;
+    }
+
     public static int rectangleArea(int a, int b) {
         return a * b;
     }
@@ -21,4 +25,3 @@ public class Math {
         return 2 * java.lang.Math.PI * radius;
     }
  }
-
