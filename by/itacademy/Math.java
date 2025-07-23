@@ -21,7 +21,7 @@ public class Math {
         return a * b;
     }
 
-    public static double circleLength(int radius) {
+    public static double calculateCircleLength(int radius) {
         return 2 * java.lang.Math.PI * radius;
     }
 
