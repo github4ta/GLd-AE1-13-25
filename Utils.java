@@ -7,8 +7,8 @@ public class Utils {
         System.out.println(" Hello from Sergei");
     }
 
-    public void printHelloFromGalnykin() {
-        System.out.println("Here from Galnykin!");
+    public static void printHelloFromGalnykin() {
+        System.out.println("Hello from Galnykin!");
     }
 
     public void printHelloFromBogdanovich() {
@@ -19,7 +19,7 @@ public class Utils {
         System.out.println("Hello from Sukhadolskaya!");
     }
 
-    public void printHelloFromTolstik() {
+    public static void printHelloFromTolstik() {
         System.out.println("Hello from Tolstik!");
     }
 
@@ -31,7 +31,7 @@ public class Utils {
         System.out.println("Hello from Lapitskaya!");
     }
 
-    public void printHelloFromKlimovich(){
+    public static void sprintHelloFromKlimovich(){
         System.out.println("Hello from Klimovich!");
     }
 }
