@@ -3,7 +3,7 @@ public class Utils {
         System.out.println("Hello from Zavizion!");
     }
 
-    public void printHelloTsarik() {
+    public static void printHelloTsarik() {
         System.out.println(" Hello from Sergei");
     }
 
