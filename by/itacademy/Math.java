@@ -11,6 +11,10 @@ public class Math {
         int p = 2 * (a + b);
         System.out.println("Периметр прямоугольника " + p);
     }
+
+    public double trapezoidArea(int a, int b, int height) {
+        return (double) ((a + b) * height) / 2;
+    }
     public static double circleLength(int radius) {
         return 2 * java.lang.Math.PI * radius;
     }
