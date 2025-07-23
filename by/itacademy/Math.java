@@ -11,6 +11,7 @@ public class Math {
         int p = 2 * (a + b);
         System.out.println("Периметр прямоугольника " + p);
     }
+
     public static int rectangleArea(int a, int b) {
         return a * b;
     }
