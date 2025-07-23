@@ -31,7 +31,7 @@ public class Utils {
         System.out.println("Hello from Lapitskaya!");
     }
 
-    public void printHelloFromKlimovich() {
+    public void printHelloFromKlimovich(){
         System.out.println("Hello from Klimovich!");
     }
 }
