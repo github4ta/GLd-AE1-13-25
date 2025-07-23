@@ -1,11 +1,11 @@
 package by.itacademy;
 
 public class Math {
-    public static int perimeterOfTriangle(int a, int b, int c) {
+    public static int calculateTrianglePerimeter(int a, int b, int c) {
         return a + b + c;
     }
 
-    public static int getPerimeterOfRectangle(int a, int b) {
+    public static int calculateRectanglePerimeter(int a, int b) {
         return 2 * (a + b);
     }
 
@@ -13,7 +13,7 @@ public class Math {
         return (double) ((a + b) * height) / 2;
     }
 
-    public static double parallelogramArea(double base, double height) {
+    public static double calculateParallelogramArea(double base, double height) {
         return base * height;
     }
 
@@ -21,7 +21,7 @@ public class Math {
         return a * b;
     }
 
-    public static double circleLength(int radius) {
+    public static double calculateCircleLength(int radius) {
         return 2 * java.lang.Math.PI * radius;
     }
 
