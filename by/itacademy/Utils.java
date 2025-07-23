@@ -43,6 +43,7 @@ public class Utils {
     public static String lineInput(String str) {
         return str.substring( 1).toUpperCase();
     }
+
     public static String getRandomStringByNumber(int length) {
         String str = "qwertyuiopasdfghjk1234567890";
         Random random = new Random();
