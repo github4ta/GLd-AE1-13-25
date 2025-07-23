@@ -14,7 +14,7 @@ public class Math {
         return (double) ((a + b) * height) / 2;
     }
 
-    public static double parallelogramArea(double base, double height) {
+    public static double calculateParallelogramArea(double base, double height) {
         return base * height;
     }
 
