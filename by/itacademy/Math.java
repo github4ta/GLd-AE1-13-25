@@ -1,7 +1,7 @@
 package by.itacademy;
 
 public class Math {
-    public static int perimeterOfTriangle(int a, int b, int c) {
+    public static int calculateTrianglePerimeter(int a, int b, int c) {
         return a + b + c;
     }
 
