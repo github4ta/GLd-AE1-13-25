@@ -2,9 +2,7 @@ package by.itacademy;
 
 public class Math {
     public static int perimeterOfTriangle(int a, int b, int c) {
-        int perimeter = a + b + c;
-        System.out.println("Perimeter of triangle: " + perimeter);
-        return perimeter;
+        return a + b + c;
     }
 
     public static void getAreaOfRectangle(int a, int b) {
@@ -12,12 +10,13 @@ public class Math {
         System.out.println("Периметр прямоугольника " + p);
     }
 
-    public double trapezoidArea(int a, int b, int height) {
+    public static double trapezoidArea(int a, int b, int height) {
         return (double) ((a + b) * height) / 2;
     }
 
     public static int rectangleArea(int a, int b) {
         return a * b;
+    }
  }
     public static double circleLength(int radius) {
         return 2 * java.lang.Math.PI * radius;
