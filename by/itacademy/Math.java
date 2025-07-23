@@ -4,6 +4,7 @@ public class Math {
     public static double circleArea(double radius) {
         return radius * radius * java.lang.Math.PI;
     }
+
     public static int perimeterOfTriangle(int a, int b, int c) {
         int perimeter = a + b + c;
         System.out.println("Perimeter of triangle: " + perimeter);
