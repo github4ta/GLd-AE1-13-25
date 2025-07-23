@@ -1,29 +1,29 @@
 public class Utils {
-    public void printHelloTsarik() {
+    public static void printHelloTsarik() {
         System.out.println(" Hello from Sergei");
     }
 
-    public void printHelloFromGalnykin() {
+    public static void printHelloFromGalnykin() {
         System.out.println("Here from Galnykin!");
     }
 
-    public void printHelloFromBogdanovich() {
+    public static void printHelloFromBogdanovich() {
         System.out.println("Hello from Bogdanovich!");
     }
 
-    public void printHelloFromSukhadolskaya() {
+    public static void printHelloFromSukhadolskaya() {
         System.out.println("Hello from Sukhadolskaya!");
     }
 
-    public void printHelloFromTolstik() {
+    public static void printHelloFromTolstik() {
         System.out.println("Hello from Tolstik!");
     }
 
-    public void printHelloFromLaptsionak() {
+    public static void printHelloFromLaptsionak() {
         System.out.println("Hello from Laptsionak!");
     }
 
-    public void printHelloFromLapitskaya() {
+    public static void printHelloFromLapitskaya() {
         System.out.println("Hello from Lapitskaya!");
     }
 }
