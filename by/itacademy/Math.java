@@ -9,7 +9,7 @@ public class Math {
         return 2 * (a + b);
     }
 
-    public static double trapezoidArea(int a, int b, int height) {
+    public static double calculateTrapezoidArea(int a, int b, int height) {
         return (double) ((a + b) * height) / 2;
     }
 
