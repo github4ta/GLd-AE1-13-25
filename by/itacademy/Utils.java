@@ -16,6 +16,6 @@ public class Utils {
         return stringMonth + "-" + stringDay + "-" +stringYear;
     }
     public static String lineInput(String str) {
-        return str.substring(1).toUpperCase();
+        return str.substring(0,1).toUpperCase();
     }
 }
