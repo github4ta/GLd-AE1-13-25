@@ -1,5 +1,5 @@
 public class Utils {
-    public void printHelloFromZavizion() {
+    public static void printHelloFromZavizion() {
         System.out.println("Hello from Zavizion!");
     }
 
@@ -15,7 +15,7 @@ public class Utils {
         System.out.println("Hello from Bogdanovich!");
     }
 
-    public void printHelloFromSukhadolskaya() {
+    public static void printHelloFromSukhadolskaya() {
         System.out.println("Hello from Sukhadolskaya!");
     }
 
@@ -27,7 +27,7 @@ public class Utils {
         System.out.println("Hello from Laptsionak!");
     }
 
-    public void printHelloFromLapitskaya() {
+    public static void printHelloFromLapitskaya() {
         System.out.println("Hello from Lapitskaya!");
     }
 
