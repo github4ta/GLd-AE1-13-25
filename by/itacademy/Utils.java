@@ -15,7 +15,7 @@ public class Utils {
         String stringDay = String.format("%02d", day);
         String stringMonth = String.format("%02d", month);
         String stringYear = String.valueOf(year);
-        return stringMonth + "-" + stringDay + "-" +stringYear;
+        return stringMonth + "-" + stringDay + "-" + stringYear;
     }
 
     public static String generateEmail(String name, String surname) {
