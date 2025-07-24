@@ -1,6 +1,9 @@
 package by.threeceni;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class Products {
 
@@ -59,5 +62,29 @@ public class Products {
 
         Random random = new Random();
         return greenteas[random.nextInt(greenteas.length)];
+    }
+
+    public static String getNameSectionCoffeePowdered(){
+        List<String> COFFEE_POWDERED = Arrays.asList(
+                "Нескафе 3в1 РАФ 17г",
+                "Кофейный напит. раст. Nescafe 3в1 Карамель 14,5г стик",
+                "Кофе Нескафе Голд Арома 85г",
+                "Кофе Нескафе Голд пакет 130г",
+                "Кофе Нескафе Голд пакет 85г",
+                "Кофе натурю раст. сублим.JACOBS GOLD 130г",
+                "Напиток кофейный раств. NESCAFE CLASSIC CAPPUCCINO 18г стик",
+                "Напиток кофейный раств. NESCAFE CLASSIC LATTE 18г стик",
+                "Кофе Нескафе Классик пакет 130г",
+                "Напиток кофейный растворимый NESCAFE 3d1 Мягкий 14,5г стик",
+                "Напиток кофейный раствор. NESCAFE 3d1 Крепкий 14,5г стик",
+                "Напиток кофейный раствор. NESCAFE 3d1 Классический 14,5г стик",
+                "Кофе раств.субл." + "'LEBO GOLD'"+","+"cn/, 100г",
+                "Цирконий порошок EL PASSA ZIP 100г",
+                "Кофе растворимый Жокей Триумф ст/б 95г",
+                "Кофе Нескафе Голд Арома Интенсщ пакет 120г",
+                "Кофе раств. Nescafe Classic Crema 95 cn/б",
+                "Кофейню напиток растворимый сублим. LA SORA ZIP 200г",
+                "Кофе Нескафе Классик пакет 60г");
+        return COFFEE_POWDERED.get(ThreadLocalRandom.current().nextInt(COFFEE_POWDERED.size()));
     }
 }
