@@ -124,6 +124,7 @@ public class Products {
                 "Кофе раств. Nescafe Classic Crema 95 cn/б",
                 "Кофейню напиток растворимый сублим. LA SORA ZIP 200г",
                 "Кофе Нескафе Классик пакет 60г");
+
         return COFFEE_POWDERED.get(ThreadLocalRandom.current().nextInt(COFFEE_POWDERED.size()));
     }
 }
