@@ -50,4 +50,14 @@ public class Products {
         int index = random.nextInt(chocolateCandies.length);
         return chocolateCandies[index];
     }
+
+    public static String getRandomGreenTeaBagged() {
+        String[] greenteas = {
+                "Напиток чайный Ромашка с мелиссой 20г.",
+                "Чай зеленый ГринФилд Melissa 25 пак.",
+                "Чайный напиток \"Вечерний сбор\" 25 пак. с ярл."};
+
+        Random random = new Random();
+        return greenteas[random.nextInt(greenteas.length)];
+    }
 }
