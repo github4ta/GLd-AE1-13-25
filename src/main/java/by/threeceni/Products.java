@@ -1,4 +1,4 @@
-package by.threeceni;
+package src.main.java.by.threeceni;
 
 import java.util.Arrays;
 import java.util.List;
@@ -64,7 +64,7 @@ public class Products {
         return greenteas[random.nextInt(greenteas.length)];
     }
 
-    public static String getRandomSpiceProduct(){
+    public static String getRandomSpiceProduct() {
         String[] spice = {
                 "\"Кисель со вкусом и ароматом вишни\" 20 гр",
                 "\"Кисель со вкусом и ароматом клюквы\" 20 гр.",
@@ -103,7 +103,7 @@ public class Products {
         return spice[random.nextInt(spice.length)];
     }
 
-    public static String getNameSectionCoffeePowdered(){
+    public static String getNameSectionCoffeePowdered() {
         List<String> COFFEE_POWDERED = Arrays.asList(
                 "Нескафе 3в1 РАФ 17г",
                 "Кофейный напит. раст. Nescafe 3в1 Карамель 14,5г стик",
@@ -117,7 +117,7 @@ public class Products {
                 "Напиток кофейный растворимый NESCAFE 3d1 Мягкий 14,5г стик",
                 "Напиток кофейный раствор. NESCAFE 3d1 Крепкий 14,5г стик",
                 "Напиток кофейный раствор. NESCAFE 3d1 Классический 14,5г стик",
-                "Кофе раств.субл." + "'LEBO GOLD'"+","+"cт/б 100г",
+                "Кофе раств.субл." + "'LEBO GOLD'" + "," + "cт/б 100г",
                 "Цирконий порошок EL PASSA ZIP 100г",
                 "Кофе растворимый Жокей Триумф ст/б 95г",
                 "Кофе Нескафе Голд Арома Интенсщ пакет 120г",
@@ -153,5 +153,28 @@ public class Products {
         Random random = new Random();
         int index = random.nextInt(cookieNames.length);
         return cookieNames[index];
+    }
+
+    public static String getRandomBlackTeaBagged() {
+        String[] blackTeaBagged = {
+                "Чай черный Кёртис Sunny Lemon (Curtis) 20пак.",
+                "Чай черный Shenly байховый 25 пак.",
+                "Чай Richard черный Lord Grey бергамот 25п",
+                "Чай черный с ароматом \"Лесная ягода\", т.з. \"Престиж\", 24г.(20 ф/п *1,2г.б/ярл)",
+                "Чай черный пакетированный т.з. \"Престиж\", 150г.(100ф/п * 1,5г б/ярл.)\n",
+                "Чай Кёртис Blue Berries Blues (Curtis) 20пак.\n",
+                "Чай Лисма Крепкий brown 25 пак.\n",
+                "Чай Curtis ассорти \"Dessert Tea Collection\", 30 пак.\n",
+                "Чай черный ГринФилд Spring Melody 25 пак.\n",
+                "Чай черный Тесс Sunrise 100пак., 1,8г\n",
+                "Подарочный набор чая Curtis \"Winter Tea Set\", 24 пак.\n",
+                "Чай Richard черный Royal Berries Selection с добавками 25 пак\n",
+                "Чайный напиток ГринФилд Summer Bouguet трав. 25 пак.\n",
+                "Чай черный ГринФилд Golden Ceylon 25 пак.\n",
+                "Чай черный с доб. ТЕСС Карамель Шарм 20 пир.\n"
+        };
+
+        Random random = new Random();
+        return blackTeaBagged[random.nextInt(blackTeaBagged.length)];
     }
 }
