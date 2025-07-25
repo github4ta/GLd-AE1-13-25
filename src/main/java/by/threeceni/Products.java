@@ -20,7 +20,6 @@ public class Products {
         return allJellyCandy[random.nextInt(allJellyCandy.length)];
     }
 
-
     public static String getRandomChocolateCandy() {
         String[] chocolateCandies = {
                 "Добрый злак с белым шоколадом",
