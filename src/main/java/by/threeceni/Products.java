@@ -217,7 +217,7 @@ public class Products {
         return candyNames[randomIndex];
     }
 
-    public static boolean containsCream(Product product) {
+    public static boolean containsCream(by.threeceni.Product product) {
         if (product.getName().toLowerCase().contains("крем")) {
             return true;
         } else {
@@ -225,7 +225,7 @@ public class Products {
         }
     }
 
-    public static boolean hasNameCrackerOrCookie(Product product) {
+    public static boolean hasNameCrackerOrCookie(by.threeceni.Product product) {
         if (product.getName().toLowerCase().contains("печенье") || product.getName().toLowerCase().contains("крекер")) {
             return true;
         }
@@ -233,7 +233,11 @@ public class Products {
         return false;
     }
 
-    public static boolean containsCaramel(Product product) {
+    public static boolean containsCaramel(by.threeceni.Product product) {
         return product.getName().toLowerCase().contains("карамель");
+    }
+
+    public static boolean containsTea(by.threeceni.Product product) {
+        return product.getName().toLowerCase().contains("чай");
     }
 }
