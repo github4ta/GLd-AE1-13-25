@@ -178,7 +178,7 @@ public class Products {
         return blackTeaBagged[random.nextInt(blackTeaBagged.length)];
     }
 
-    public static String getRandomCandy() {
+    public static String getRandomCaramel() {
         String[] candyNames = {
                 "Карамель Sla Sti \"Кислоп\" Микс (яблоко, вишня, черника) 200г",
                 "Набор карамели \"Акконд\" \"Рози блюз\" 150г",
