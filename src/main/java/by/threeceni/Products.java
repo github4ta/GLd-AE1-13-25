@@ -6,7 +6,17 @@ import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Products {
+    public static class Product {
+        private String name;
 
+        public Product(String name) {
+            this.name = name;
+        }
+
+        public String getName() {
+            return name;
+        }
+    }
 
     public static String getRandomNameJellyCandy() {
         String[] allJellyCandy = {"МЯГКИЕ ФРУКТОВЫЕ КОНФЕТЫ с фруктовым соком Фруктовый сад",
@@ -253,8 +263,11 @@ public class Products {
         return product.getName().toLowerCase().contains("кофе");
     }
 
-    public static boolean isCandy(Product product) {
-        return product != null && product.getName() != null &&
-                (product.getName().toLowerCase().contains("конфета") || product.getName().toLowerCase().contains("конфеты"));
+    public static boolean containsCandy(Product product) {
+        if (product == null || product.getName() == null) {
+            return false;
+        }
+        String lowerCaseName = product.getName().toLowerCase();
+        return lowerCaseName.contains("конфеты") || lowerCaseName.contains("конфета");
     }
 }
