@@ -216,4 +216,12 @@ public class Products {
         int randomIndex = random.nextInt(candyNames.length);
         return candyNames[randomIndex];
     }
+
+    public static boolean containsCream(Product product) {
+        if (product.getName().toLowerCase().contains("крем")) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
