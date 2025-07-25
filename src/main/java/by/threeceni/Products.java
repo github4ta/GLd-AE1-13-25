@@ -240,4 +240,11 @@ public class Products {
     public static boolean containsTea(by.threeceni.Product product) {
         return product.getName().toLowerCase().contains("чай");
     }
+
+    public static boolean isFrozenDessert(Product product) {
+        String name = product.getName().toLowerCase();
+
+        return name.contains("мороженое") ||
+                (name.contains("десерт") && name.contains("замороженный"));
+    }
 }
