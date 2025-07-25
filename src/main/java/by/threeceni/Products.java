@@ -7,6 +7,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class Products {
 
+
     public static String getRandomNameJellyCandy() {
         String[] allJellyCandy = {"МЯГКИЕ ФРУКТОВЫЕ КОНФЕТЫ с фруктовым соком Фруктовый сад",
                 "Конфета жев. Жуй Жуйсы (микс)",
@@ -247,4 +248,7 @@ public class Products {
         return name.contains("мороженое") ||
                 (name.contains("десерт") && name.contains("замороженный"));
     }
+    public static boolean isNameCoffee(Product product) {
+        return product.getName().toLowerCase().contains("кофе");
+   }
 }
