@@ -232,4 +232,8 @@ public class Products {
 
         return false;
     }
+
+    public static boolean containsCaramel(Product product) {
+        return product.getName().toLowerCase().contains("карамель");
+    }
 }
