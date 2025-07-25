@@ -228,8 +228,8 @@ public class Products {
     public static boolean hasNameCrackerOrCookie(Product product) {
         if (product.getName().toLowerCase().contains("печенье") || product.getName().toLowerCase().contains("крекер")) {
             return true;
-        } else {
-            return false;
         }
+
+        return false;
     }
 }
