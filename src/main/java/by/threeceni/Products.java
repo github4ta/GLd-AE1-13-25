@@ -248,7 +248,13 @@ public class Products {
         return name.contains("мороженое") ||
                 (name.contains("десерт") && name.contains("замороженный"));
     }
+
     public static boolean isNameCoffee(Product product) {
         return product.getName().toLowerCase().contains("кофе");
-   }
+    }
+
+    public static boolean isCandy(Product product) {
+        return product != null && product.getName() != null &&
+                (product.getName().toLowerCase().contains("конфета") || product.getName().toLowerCase().contains("конфеты"));
+    }
 }
