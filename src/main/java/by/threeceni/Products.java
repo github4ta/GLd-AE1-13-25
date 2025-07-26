@@ -276,11 +276,11 @@ public class Products {
         return getProductCountByKeyword(productList, "чай");
     }
 
-    public static int countCremProduct(List<Product> products){
+    public static int countCremProduct(List<Product> products) {
         String wantedProduct = "крем";
         long count = 0;
-        for(Product product: products){
-            if(product.getName().toLowerCase().contains(wantedProduct)){
+        for (Product product : products) {
+            if (product.getName().toLowerCase().contains(wantedProduct)) {
                 count++;
             }
         }
@@ -289,11 +289,21 @@ public class Products {
 
     public static int getNumberOfSweets(List<Product> productList) {
         int counter = 0;
-        for(Product product : productList) {
-            if(product.getName().toLowerCase().contains("конфета") || product.getName().toLowerCase().contains("конфеты")) {
+        for (Product product : productList) {
+            if (product.getName().toLowerCase().contains("конфета") || product.getName().toLowerCase().contains("конфеты")) {
                 counter++;
             }
         }
         return counter;
+    }
+
+    public static int getNumberOfCrackerAndCookie(List<Product> products) {
+        int count = 0;
+        for (Product product : products) {
+            if (hasNameCrackerOrCookie(product)) {
+                count++;
+            }
+        }
+        return count;
     }
 }
