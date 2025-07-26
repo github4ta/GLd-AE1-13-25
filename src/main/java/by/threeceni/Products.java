@@ -1,6 +1,7 @@
 package by.threeceni;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
@@ -276,5 +277,10 @@ public class Products {
 
     public static int getProductCountForTea(List<Product> productList) {
         return getProductCountByKeyword(productList, "чай");
+    }
+
+    public static int countCremProduct(List<Product> product, String cream){
+        long count = Collections.frequency(product, cream.toLowerCase().contains("крем"));
+        return Math.toIntExact(count);
     }
 }
