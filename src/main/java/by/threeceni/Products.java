@@ -279,9 +279,13 @@ public class Products {
         return getProductCountByKeyword(productList, "чай");
     }
 
-    public static int countCremProduct(List<Product> product){
-        String requiredProduct = "крем";
-        long count = Collections.frequency(product,requiredProduct.toLowerCase());
+    public static int countCremProduct(List<Product> products){
+        long count = 0;
+        for(Product product: products){
+            if(product.getName().toLowerCase().contains("крем")){
+                count++;
+            }
+        }
         return Math.toIntExact(count);
     }
 }
