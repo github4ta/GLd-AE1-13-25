@@ -1,5 +1,6 @@
 package by.threeceni;
 
+import java.util.*;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
@@ -287,5 +288,15 @@ public class Products {
             }
         }
         return Math.toIntExact(count);
+    }
+
+    public static int getNumberOfSweets(ArrayList<Product> productList) {
+        int counter = 0;
+        for(Product product : productList) {
+            if(product.getName().toLowerCase().contains("конфета") || product.getName().toLowerCase().contains("конфеты")) {
+                counter++;
+            }
+        }
+        return counter;
     }
 }
