@@ -280,9 +280,10 @@ public class Products {
     }
 
     public static int countCremProduct(List<Product> products){
+        String wantedProduct = "крем";
         long count = 0;
         for(Product product: products){
-            if(product.getName().toLowerCase().contains("крем")){
+            if(product.getName().toLowerCase().contains(wantedProduct)){
                 count++;
             }
         }
