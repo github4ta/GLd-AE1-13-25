@@ -287,7 +287,7 @@ public class Products {
         return Math.toIntExact(count);
     }
 
-    public static int getNumberOfSweets(ArrayList<Product> productList) {
+    public static int getNumberOfSweets(List<Product> productList) {
         int counter = 0;
         for(Product product : productList) {
             if(product.getName().toLowerCase().contains("конфета") || product.getName().toLowerCase().contains("конфеты")) {
