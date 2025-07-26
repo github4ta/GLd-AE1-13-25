@@ -259,4 +259,18 @@ public class Products {
         String lowerCaseName = product.getName().toLowerCase();
         return lowerCaseName.contains("конфеты") || lowerCaseName.contains("конфета");
     }
+
+    public static int getProductCountByKeyword(List<Product> productList, String keyword) {
+        keyword = keyword.toLowerCase();
+        int counter = 0;
+
+        for (Product p : productList) {
+            String name = p.getName();
+            if (name.toLowerCase().contains(keyword)) {
+                counter++;
+            }
+        }
+
+        return counter;
+    }
 }
