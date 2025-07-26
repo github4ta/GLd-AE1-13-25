@@ -6,17 +6,6 @@ import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Products {
-    public static class Product {
-        private String name;
-
-        public Product(String name) {
-            this.name = name;
-        }
-
-        public String getName() {
-            return name;
-        }
-    }
 
     public static String getRandomNameJellyCandy() {
         String[] allJellyCandy = {"МЯГКИЕ ФРУКТОВЫЕ КОНФЕТЫ с фруктовым соком Фруктовый сад",
