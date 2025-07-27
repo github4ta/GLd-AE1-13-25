@@ -306,4 +306,16 @@ public class Products {
         }
         return count;
     }
+
+    public static int countCaramelProducts(List<Product> productList) {
+        int caramelCount = 0;
+        String keyword = "карамель";
+
+        for (Product product : productList) {
+            if (product.getName() != null && product.getName().toLowerCase().contains(keyword)) {
+                caramelCount++;
+            }
+        }
+        return caramelCount;
+    }
 }
