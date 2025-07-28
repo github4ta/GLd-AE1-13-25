@@ -16,6 +16,11 @@ public class Main {
         // 3. проверка
         Assertions.assertEquals(actualSum, EXPECTED_SUM);
 
+        calculator = new Calculator();
+
+        // 3. проверка
+        Assertions.assertEquals(5, calculator.add(2, 3));
+
         // 1. подготовка
         calculator = new Calculator();
         // исходные (тестовые) данные, ожидаемый результат - из документации
