@@ -250,7 +250,7 @@ public class Products {
         return product.getName().toLowerCase().contains("кофе");
     }
 
-    public static boolean containsCandy(by.threeceni.Product product) {
+    public static boolean hasNameCandy(by.threeceni.Product product) {
         if (product == null || product.getName() == null) {
             return false;
         }
