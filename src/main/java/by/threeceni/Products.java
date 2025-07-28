@@ -322,4 +322,14 @@ public class Products {
         }
         return caramelCount;
     }
+
+    public static int getNumberOfFrozen(List<by.threeceni.Product> productList) {
+        int counter = 0;
+        for (by.threeceni.Product product : productList) {
+            if (product.getName().toLowerCase().contains("мороженное") || product.getName().toLowerCase().contains("десерт") && product.getName().toLowerCase().contains("замороженный")) {
+                counter++;
+            }
+        }
+        return counter;
+    }
 }
