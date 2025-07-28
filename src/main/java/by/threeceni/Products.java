@@ -234,7 +234,7 @@ public class Products {
         return false;
     }
 
-    public static boolean containsCaramel(Product product) {
+    public static boolean hasNameCaramel(Product product) {
         return product.getName().toLowerCase().contains("карамель");
     }
 
