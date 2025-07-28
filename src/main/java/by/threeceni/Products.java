@@ -1,4 +1,4 @@
-package src.main.java.by.threeceni;
+package by.threeceni;
 
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
@@ -215,7 +215,7 @@ public class Products {
         return candyNames[randomIndex];
     }
 
-    public static boolean containsCream(by.threeceni.Product product) {
+    public static boolean containsCream(Product product) {
         if (product.getName().toLowerCase().contains("крем")) {
             return true;
         } else {
@@ -223,7 +223,7 @@ public class Products {
         }
     }
 
-    public static boolean hasNameCrackerOrCookie(by.threeceni.Product product) {
+    public static boolean hasNameCrackerOrCookie(Product product) {
         if (product.getName().toLowerCase().contains("печенье") || product.getName().toLowerCase().contains("крекер")) {
             return true;
         }
@@ -231,26 +231,26 @@ public class Products {
         return false;
     }
 
-    public static boolean containsCaramel(by.threeceni.Product product) {
+    public static boolean containsCaramel(Product product) {
         return product.getName().toLowerCase().contains("карамель");
     }
 
-    public static boolean containsTea(by.threeceni.Product product) {
+    public static boolean containsTea(Product product) {
         return product.getName().toLowerCase().contains("чай");
     }
 
-    public static boolean isFrozenDessert(by.threeceni.Product product) {
+    public static boolean hasIceCreamOrFrozenDessert(Product product) {
         String name = product.getName().toLowerCase();
 
         return name.contains("мороженое") ||
                 (name.contains("десерт") && name.contains("замороженный"));
     }
 
-    public static boolean isNameCoffee(by.threeceni.Product product) {
+    public static boolean isNameCoffee(Product product) {
         return product.getName().toLowerCase().contains("кофе");
     }
 
-    public static boolean containsCandy(by.threeceni.Product product) {
+    public static boolean containsCandy(Product product) {
         if (product == null || product.getName() == null) {
             return false;
         }
@@ -258,15 +258,15 @@ public class Products {
         return lowerCaseName.contains("конфеты") || lowerCaseName.contains("конфета");
     }
 
-    public static boolean containsGlasses(by.threeceni.Product product) {
+    public static boolean containsGlasses(Product product) {
         return product.getName().toLowerCase().contains("очки");
     }
 
-    public static int getProductCountByKeyword(List<by.threeceni.Product> productList, String keyword) {
+    public static int getProductCountByKeyword(List<Product> productList, String keyword) {
         keyword = keyword.toLowerCase();
         int counter = 0;
 
-        for (by.threeceni.Product p : productList) {
+        for (Product p : productList) {
             String name = p.getName();
             if (name.toLowerCase().contains(keyword)) {
                 counter++;
@@ -276,14 +276,14 @@ public class Products {
         return counter;
     }
 
-    public static int getProductCountForTea(List<by.threeceni.Product> productList) {
+    public static int getProductCountForTea(List<Product> productList) {
         return getProductCountByKeyword(productList, "чай");
     }
 
-    public static int countCremProduct(List<by.threeceni.Product> products) {
+    public static int countCremProduct(List<Product> products) {
         String wantedProduct = "крем";
         long count = 0;
-        for (by.threeceni.Product product : products) {
+        for (Product product : products) {
             if (product.getName().toLowerCase().contains(wantedProduct)) {
                 count++;
             }
@@ -291,9 +291,9 @@ public class Products {
         return Math.toIntExact(count);
     }
 
-    public static int getNumberOfSweets(List<by.threeceni.Product> productList) {
+    public static int getNumberOfSweets(List<Product> productList) {
         int counter = 0;
-        for (by.threeceni.Product product : productList) {
+        for (Product product : productList) {
             if (product.getName().toLowerCase().contains("конфета") || product.getName().toLowerCase().contains("конфеты")) {
                 counter++;
             }
@@ -301,9 +301,9 @@ public class Products {
         return counter;
     }
 
-    public static int getNumberOfCrackerAndCookie(List<by.threeceni.Product> products) {
+    public static int getNumberOfCrackerAndCookie(List<Product> products) {
         int count = 0;
-        for (by.threeceni.Product product : products) {
+        for (Product product : products) {
             if (hasNameCrackerOrCookie(product)) {
                 count++;
             }
@@ -311,11 +311,11 @@ public class Products {
         return count;
     }
 
-    public static int countCaramelProducts(List<by.threeceni.Product> productList) {
+    public static int countCaramelProducts(List<Product> productList) {
         int caramelCount = 0;
         String keyword = "карамель";
 
-        for (by.threeceni.Product product : productList) {
+        for (Product product : productList) {
             if (product.getName() != null && product.getName().toLowerCase().contains(keyword)) {
                 caramelCount++;
             }
@@ -323,9 +323,9 @@ public class Products {
         return caramelCount;
     }
 
-    public static int getNumberOfFrozen(List<by.threeceni.Product> productList) {
+    public static int getNumberOfFrozen(List<Product> productList) {
         int counter = 0;
-        for (by.threeceni.Product product : productList) {
+        for (Product product : productList) {
             if (product.getName().toLowerCase().contains("мороженное") || product.getName().toLowerCase().contains("десерт") && product.getName().toLowerCase().contains("замороженный")) {
                 counter++;
             }
