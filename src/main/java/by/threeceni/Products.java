@@ -242,7 +242,7 @@ public class Products {
         return product.getName().toLowerCase().contains("чай");
     }
 
-    public static boolean hasIceCreamOrFrozenDessert(Product product) {
+    public static boolean hasNameIceCreamOrFrozenDessert(Product product) {
         String name = product.getName().toLowerCase();
 
         return name.contains("мороженое") ||
