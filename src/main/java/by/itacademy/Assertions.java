@@ -10,4 +10,13 @@ public class Assertions {
         }
         return result;
     }
+
+    public static boolean assertEquals(double expected, double actual) {
+        boolean result = expected == actual;
+        if (!result) {
+            System.out.printf("ERROR: ожидаем %s, но фактически %s", expected, actual);
+            // String str = String.format("ERROR: ожидаем %s, но фактически %s", EXPECTED_SUM, actualSum);
+        }
+        return result;
+    }
 }

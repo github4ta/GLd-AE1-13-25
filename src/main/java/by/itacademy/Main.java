@@ -28,5 +28,19 @@ public class Main {
 
         // 3. проверка
         Assertions.assertEquals(actualDifference, EXPECTED_DIFFERENCE);
+
+
+        // 1. подготовка
+        calculator = new Calculator();
+        // исходные (тестовые) данные, ожидаемый результат - из документации
+        a = 1;
+        b = 2;
+        final double EXPECTED_QUOTIENT = 0.5;
+
+        // 2. действие
+        double actualQuotient = calculator.divide(a, b);
+
+        // 3. проверка
+        Assertions.assertEquals(actualQuotient, EXPECTED_QUOTIENT);
     }
 }
