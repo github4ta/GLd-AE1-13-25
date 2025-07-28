@@ -1,4 +1,4 @@
-package src.main.java.by.threeceni;
+package by.threeceni;
 
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
