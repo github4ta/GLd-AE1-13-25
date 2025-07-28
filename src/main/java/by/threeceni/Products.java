@@ -250,7 +250,7 @@ public class Products {
         return product.getName().toLowerCase().contains("кофе");
     }
 
-    public static boolean containsCandy(Product product) {
+    public static boolean hasNameCandy(Product product) {
         if (product == null || product.getName() == null) {
             return false;
         }
@@ -258,7 +258,7 @@ public class Products {
         return lowerCaseName.contains("конфеты") || lowerCaseName.contains("конфета");
     }
 
-    public static boolean containsGlasses(Product product) {
+    public static boolean hasNameGlasses(Product product) {
         return product.getName().toLowerCase().contains("очки");
     }
 
