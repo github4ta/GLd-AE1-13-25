@@ -258,7 +258,7 @@ public class Products {
         return lowerCaseName.contains("конфеты") || lowerCaseName.contains("конфета");
     }
 
-    public static boolean containsGlasses(by.threeceni.Product product) {
+    public static boolean hasNameGlasses(by.threeceni.Product product) {
         return product.getName().toLowerCase().contains("очки");
     }
 
