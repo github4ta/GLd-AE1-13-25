@@ -1,6 +1,9 @@
 package by.threeceni;
 
 import java.util.*;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Products {
@@ -239,14 +242,14 @@ public class Products {
         return product.getName().toLowerCase().contains("чай");
     }
 
-    public static boolean hasIceCreamOrFrozenDessert(Product product) {
+    public static boolean hasNameIceCreamOrFrozenDessert(Product product) {
         String name = product.getName().toLowerCase();
 
         return name.contains("мороженое") ||
                 (name.contains("десерт") && name.contains("замороженный"));
     }
 
-    public static boolean isNameCoffee(Product product) {
+    public static boolean hasNameCoffee(Product product) {
         return product.getName().toLowerCase().contains("кофе");
     }
 
