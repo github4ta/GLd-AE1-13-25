@@ -15,5 +15,18 @@ public class Main {
 
         // 3. проверка
         Assertions.assertEquals(actualSum, EXPECTED_SUM);
+
+        // 1. подготовка
+        calculator = new Calculator();
+        // исходные (тестовые) данные, ожидаемый результат - из документации
+        a = -9;
+        b = 8;
+        final int EXPECTED_DIFFERENCE = -17;
+
+        // 2. действие
+        int actualDifference = calculator.subtract(a, b);
+
+        // 3. проверка
+        Assertions.assertEquals(actualDifference, EXPECTED_DIFFERENCE);
     }
 }
