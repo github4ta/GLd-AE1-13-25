@@ -1,6 +1,5 @@
 package by.threeceni;
 
-import java.util.*;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
@@ -104,8 +103,8 @@ public class Products {
                 "Чеснок сушеный гранулы 10 гр ТМ Мастер Дак"
         };
 
-        Random random = new Random();
-        return spice[random.nextInt(spice.length)];
+        int randomIndex = getRandomIndexForArray(spice);
+        return spice[randomIndex];
     }
 
     public static String getRandomIndexForArraySectionCoffeePowdered() {
@@ -225,12 +224,12 @@ public class Products {
         }
     }
 
-    public static boolean hasNameCrackerOrCookie(Product product) {
+    public static boolean countProductsWithNameCrackerOrCookie(Product product) {
         if (product.getName().toLowerCase().contains("печенье") || product.getName().toLowerCase().contains("крекер")) {
             return true;
+        } else {
+            return false;
         }
-
-        return false;
     }
 
     public static boolean hasNameCaramel(Product product) {
@@ -306,7 +305,7 @@ public class Products {
     public static int getNumberOfCrackerAndCookie(List<Product> products) {
         int count = 0;
         for (Product product : products) {
-            if (hasNameCrackerOrCookie(product)) {
+            if (countProductsWithNameCrackerOrCookie(product)) {
                 count++;
             }
         }
