@@ -55,8 +55,7 @@ public class Products {
                 "Рафаэлло"
         };
 
-        Random random = new Random();
-        int index = random.nextInt(chocolateCandies.length);
+        int index = getRandomIndexForArray(chocolateCandies);
         return chocolateCandies[index];
     }
 
