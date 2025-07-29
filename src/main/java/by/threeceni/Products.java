@@ -132,7 +132,7 @@ public class Products {
         return COFFEE_POWDERED.get(ThreadLocalRandom.current().nextInt(COFFEE_POWDERED.size()));
     }
 
-    public static String getRandomCookieName() {
+    public static String getRandomIndexForArraySectionCookieName() {
         String[] cookieNames = {
                 "Печенье «Bonitki» сдобное с шоколадными каплями 135 г",
                 "Печенье-сэндвич «Tondi» с какао и молочным кремом 204 г",
@@ -292,7 +292,7 @@ public class Products {
         return Math.toIntExact(count);
     }
 
-    public static int getNumberOfSweets(List<Product> productList) {
+    public static int countProductsWithNameSweets(List<Product> productList) {
         int counter = 0;
         for (Product product : productList) {
             if (product.getName().toLowerCase().contains("конфета") || product.getName().toLowerCase().contains("конфеты")) {
