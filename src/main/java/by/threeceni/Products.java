@@ -335,4 +335,10 @@ public class Products {
         }
         return counter;
     }
+
+    private static int getRandomIndexForArray(String[] array) {
+        Random random = new Random();
+        int index = random.nextInt(array.length);
+        return index;
+    }
 }
