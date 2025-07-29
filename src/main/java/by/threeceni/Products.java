@@ -238,7 +238,7 @@ public class Products {
         return product.getName().toLowerCase().contains("карамель");
     }
 
-    public static boolean containsTea(Product product) {
+    public static boolean hasNameTea(Product product) {
         return product.getName().toLowerCase().contains("чай");
     }
 
