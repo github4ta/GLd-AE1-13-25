@@ -64,8 +64,8 @@ public class Products {
                 "Чай зеленый ГринФилд Melissa 25 пак.",
                 "Чайный напиток \"Вечерний сбор\" 25 пак. с ярл."};
 
-        Random random = new Random();
-        return greenteas[random.nextInt(greenteas.length)];
+        int index = getRandomIndexForArray(greenteas);
+        return greenteas[index];
     }
 
     public static String getRandomSpiceProduct() {
