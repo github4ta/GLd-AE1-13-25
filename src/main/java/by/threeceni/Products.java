@@ -180,8 +180,8 @@ public class Products {
                 "Чай черный с доб. ТЕСС Карамель Шарм 20 пир.\n"
         };
 
-        Random random = new Random();
-        return blackTeaBagged[random.nextInt(blackTeaBagged.length)];
+        int index = getRandomIndexForArray(blackTeaBagged);
+        return blackTeaBagged[index];
     }
 
     public static String getRandomCaramel() {
@@ -279,7 +279,7 @@ public class Products {
         return counter;
     }
 
-    public static int getProductCountForTea(List<Product> productList) {
+    public static int countProductsWithNameTea(List<Product> productList) {
         return getProductCountByKeyword(productList, "чай");
     }
 
