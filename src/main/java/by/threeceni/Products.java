@@ -109,7 +109,7 @@ public class Products {
         return spice[random.nextInt(spice.length)];
     }
 
-    public static String getNameSectionCoffeePowdered() {
+    public static String getRandomIndexForArraySectionCoffeePowdered() {
         List<String> COFFEE_POWDERED = Arrays.asList(
                 "Нескафе 3в1 РАФ 17г",
                 "Кофейный напит. раст. Nescafe 3в1 Карамель 14,5г стик",
@@ -283,7 +283,7 @@ public class Products {
         return getProductCountByKeyword(productList, "чай");
     }
 
-    public static int countCremProduct(List<Product> products) {
+    public static int countProductsWithNameCream(List<Product> products) {
         String wantedProduct = "крем";
         long count = 0;
         for (Product product : products) {
