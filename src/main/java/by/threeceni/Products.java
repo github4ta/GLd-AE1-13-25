@@ -211,9 +211,7 @@ public class Products {
                 "Карамель леденцовая Губки 30г"
         };
 
-        Random random = new Random();
-        int randomIndex = random.nextInt(candyNames.length);
-        return candyNames[randomIndex];
+        return candyNames[getRandomIndexForArray(candyNames)];
     }
 
     public static boolean containsCream(Product product) {
