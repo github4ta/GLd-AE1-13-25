@@ -21,4 +21,12 @@ public class CalculatorTest {
         int actual = calculator.subtract(8, 5);
         Assertions.assertEquals(actual, 3);
     }
+
+    @Test
+    @DisplayName("Проверка метода умножения 8 * 5 = 40")
+    public void testMyltiply() {
+        Calculator calculator = new Calculator();
+        int actual = calculator.multiply(8, 5);
+        Assertions.assertEquals(actual, 40);
+    }
 }
