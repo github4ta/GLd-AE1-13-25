@@ -310,7 +310,7 @@ public class Products {
         return count;
     }
 
-    public static int countCaramelProducts(List<Product> productList) {
+    public static int countProductsWithNameCaramel(List<Product> productList) {
         int caramelCount = 0;
         String keyword = "карамель";
 

@@ -6,6 +6,11 @@ import org.junit.jupiter.api.Assertions;
 public class CalculatorTest {
     private Calculator calculator;
 
+    @BeforeAll
+    public static void start() {
+        System.out.println("Сработал метод с аннотацией BeforeAll");
+    }
+
     @BeforeEach
     public void createCalculatorInstance() {
         calculator = new Calculator();
@@ -53,4 +58,6 @@ public class CalculatorTest {
     public void afterEach() {
         System.out.println("@AfterEach");
     }
+
+
 }
