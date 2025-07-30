@@ -218,7 +218,7 @@ public class Products {
         return product.getName().toLowerCase().contains("крем");
     }
 
-    public static boolean countProductsWithNameCrackerOrCookie(Product product) {
+    public static boolean hasNameCrackerOrCookie(Product product) {
         if (product.getName().toLowerCase().contains("печенье") || product.getName().toLowerCase().contains("крекер")) {
             return true;
         } else {
@@ -303,7 +303,7 @@ public class Products {
     public static int getNumberOfCrackerAndCookie(List<Product> products) {
         int count = 0;
         for (Product product : products) {
-            if (countProductsWithNameCrackerOrCookie(product)) {
+            if (hasNameCrackerOrCookie(product)) {
                 count++;
             }
         }
