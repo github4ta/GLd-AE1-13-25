@@ -29,4 +29,12 @@ public class CalculatorTest {
         int actual = calculator.multiply(8, 5);
         Assertions.assertEquals(actual, 40);
     }
+
+    @Test
+    @DisplayName("Проверка метода деления 8 / 4 = 2")
+    public void testDivide() {
+        Calculator calculator = new Calculator();
+        double actual = calculator.divide(8, 4);
+        Assertions.assertEquals(actual, 2);
+    }
 }
