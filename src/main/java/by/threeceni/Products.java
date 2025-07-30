@@ -22,8 +22,8 @@ public class Products {
                 "Конфета жев. Мусики (микс)", "Жевательные конфеты Mamba, ассорти ",
                 "Жевательные конфеты ВЕВЕТО COOL BEANS BERRY MIX"};
 
-        Random random = new Random();
-        return allJellyCandy[random.nextInt(allJellyCandy.length)];
+        int index = getRandomIndexForArray(allJellyCandy);
+        return allJellyCandy[index];
     }
 
     public static String getRandomChocolateCandy() {
@@ -214,12 +214,8 @@ public class Products {
         return candyNames[getRandomIndexForArray(candyNames)];
     }
 
-    public static boolean containsCream(Product product) {
-        if (product.getName().toLowerCase().contains("крем")) {
-            return true;
-        } else {
-            return false;
-        }
+    public static boolean hasNameCream(Product product) {
+        return product.getName().toLowerCase().contains("крем");
     }
 
     public static boolean countProductsWithNameCrackerOrCookie(Product product) {
@@ -326,14 +322,14 @@ public class Products {
         return caramelCount;
     }
 
-    public static int getNumberOfFrozen(List<Product> productList) {
-        int counter = 0;
+    public static int countProductsWithNameIceCreamOrDessertAndFrozen(List<Product> productList) {
+        int count = 0;
         for (Product product : productList) {
             if (product.getName().toLowerCase().contains("мороженное") || product.getName().toLowerCase().contains("десерт") && product.getName().toLowerCase().contains("замороженный")) {
-                counter++;
+                count++;
             }
         }
-        return counter;
+        return count;
     }
 
     private static int getRandomIndexForArray(String[] array) {
