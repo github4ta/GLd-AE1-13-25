@@ -275,6 +275,10 @@ public class Products {
         return counter;
     }
 
+    public static int countProductsWithNameCoffee(List<Product> productList) {
+        return getProductCountByKeyword(productList, "кофе");
+    }
+
     public static int countProductsWithNameTea(List<Product> productList) {
         return getProductCountByKeyword(productList, "чай");
     }
