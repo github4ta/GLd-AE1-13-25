@@ -261,13 +261,13 @@ public class Products {
         return product.getName().toLowerCase().contains("очки");
     }
 
-    public static int getProductCountByKeyword(List<Product> productList, String keyword) {
-        keyword = keyword.toLowerCase();
+    public static int countProductsWithName(List<Product> productList, String name) {
+        name = name.toLowerCase();
         int counter = 0;
 
         for (Product p : productList) {
-            String name = p.getName();
-            if (name.toLowerCase().contains(keyword)) {
+            String n = p.getName();
+            if (n.toLowerCase().contains(name)) {
                 counter++;
             }
         }
@@ -276,11 +276,11 @@ public class Products {
     }
 
     public static int countProductsWithNameCoffee(List<Product> productList) {
-        return getProductCountByKeyword(productList, "кофе");
+        return countProductsWithName(productList, "кофе");
     }
 
     public static int countProductsWithNameTea(List<Product> productList) {
-        return getProductCountByKeyword(productList, "чай");
+        return countProductsWithName(productList, "чай");
     }
 
     public static int countProductsWithNameCream(List<Product> products) {
