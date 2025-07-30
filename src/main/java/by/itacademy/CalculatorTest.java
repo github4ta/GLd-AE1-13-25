@@ -8,9 +8,17 @@ public class CalculatorTest {
 
     @Test
     @DisplayName("Проверка метода сложения 2 + 5 = 7")
-    public void test1() {
+    public void testAdd() {
         Calculator calculator = new Calculator();
         int actual = calculator.add(2, 5);
         Assertions.assertEquals(actual, 7);
+    }
+
+    @Test
+    @DisplayName("Проверка метода вычитания 8 - 5 = 3")
+    public void testSubtract() {
+        Calculator calculator = new Calculator();
+        int actual = calculator.subtract(8, 5);
+        Assertions.assertEquals(actual, 3);
     }
 }
