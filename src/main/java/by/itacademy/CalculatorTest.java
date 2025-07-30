@@ -1,9 +1,7 @@
 package by.itacademy;
 
+import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
 
 public class CalculatorTest {
     private Calculator calculator;
@@ -48,5 +46,11 @@ public class CalculatorTest {
         calculator = new Calculator();
         double actual = calculator.divide(8, 4);
         Assertions.assertEquals(actual, 2);
+    }
+
+    @AfterEach
+    @DisplayName("AfterEach")
+    public void afterEach() {
+        System.out.println("@AfterEach");
     }
 }
