@@ -37,7 +37,7 @@ public class CalculatorTest {
 
     @Test
     @DisplayName("Проверка метода умножения 8 * 5 = 40")
-    public void testMyltiply() {
+    public void testMultiply() {
         System.out.println("Проверка метода умножения 8 * 5 = 40");
         calculator = new Calculator();
         int actual = calculator.multiply(8, 5);
