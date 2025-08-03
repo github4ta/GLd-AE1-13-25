@@ -287,12 +287,9 @@ public class Products {
     }
 
     public static int countProductsWithNameSweets(List<Product> productList) {
-        int counter = 0;
-        for (Product product : productList) {
-            if (product.getName().toLowerCase().contains("конфета") || product.getName().toLowerCase().contains("конфеты")) {
-                counter++;
-            }
-        }
+        int counter = (int) productList.stream()
+                .filter(product -> hasNameCandy(product))
+                .count();
         return counter;
     }
 
