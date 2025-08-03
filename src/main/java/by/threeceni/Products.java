@@ -281,13 +281,8 @@ public class Products {
 
     public static int countProductsWithNameCream(List<Product> products) {
         String wantedProduct = "крем";
-        long count = 0;
-        for (Product product : products) {
-            if (product.getName().toLowerCase().contains(wantedProduct)) {
-                count++;
-            }
-        }
-        return Math.toIntExact(count);
+        return (int) products.stream().filter(product -> product.getName().toLowerCase().contains(wantedProduct))
+                                      .count();
     }
 
     public static int countProductsWithNameSweets(List<Product> productList) {
