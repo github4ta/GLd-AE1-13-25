@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.stream.Collectors;
 
 public class Products {
 
@@ -282,7 +283,7 @@ public class Products {
     public static int countProductsWithNameCream(List<Product> products) {
         String wantedProduct = "крем";
         return (int) products.stream().filter(product -> product.getName().toLowerCase().contains(wantedProduct))
-                                      .count();
+                .count();
     }
 
     public static int countProductsWithNameSweets(List<Product> productList) {
@@ -295,13 +296,11 @@ public class Products {
         return counter;
     }
 
-    public static int getNumberOfCrackerAndCookie(List<Product> products) {
-        int count = 0;
-        for (Product product : products) {
-            if (hasNameCrackerOrCookie(product)) {
-                count++;
-            }
-        }
+    public static long getNumberOfCrackerAndCookie(List<Product> products) {
+        long count = products.stream()
+                .filter(product -> hasNameCrackerOrCookie(product))
+                .count();
+
         return count;
     }
 
