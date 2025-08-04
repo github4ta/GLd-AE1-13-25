@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Products {
 
@@ -308,14 +309,8 @@ public class Products {
         return caramelCount;
     }
 
-    public static int countProductsWithNameIceCreamOrDessertAndFrozen(List<Product> productList) {
-        int count = 0;
-        for (Product product : productList) {
-            if (product.getName().toLowerCase().contains("мороженное") || product.getName().toLowerCase().contains("десерт") && product.getName().toLowerCase().contains("замороженный")) {
-                count++;
-            }
-        }
-        return count;
+    public static Stream<Product> countProductsWithNameIceCreamOrDessertAndFrozen(List<Product> productList) {
+        return productList.stream().filter(product -> product.getName().toLowerCase().contains("мороженное") || product.getName().toLowerCase().contains("десерт") && product.getName().toLowerCase().contains("замороженный"));
     }
 
     private static int getRandomIndexForArray(String[] array) {
