@@ -259,17 +259,12 @@ public class Products {
     }
 
     public static int countProductsWithName(List<Product> productList, String name) {
-        name = name.toLowerCase();
-        int counter = 0;
+        String lowerCaseName = name.toLowerCase();
 
-        for (Product p : productList) {
-            String n = p.getName();
-            if (n.toLowerCase().contains(name)) {
-                counter++;
-            }
-        }
-
-        return counter;
+        // Safe to cast to int since List.size() is limited to Integer.MAX_VALUE
+        return (int) productList.stream()
+                .filter(p -> p.getName().toLowerCase().contains(lowerCaseName))
+                .count();
     }
 
     public static int countProductsWithNameCoffee(List<Product> productList) {
