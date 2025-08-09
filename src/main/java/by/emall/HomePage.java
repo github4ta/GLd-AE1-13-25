@@ -9,4 +9,6 @@ public class HomePage {
 
     private final String FOOTER_LINK_FOR_SUPPLIERS =
             "//a[" + CLASS_FOOTER_LINK + " and " + FOOTER_LINK_TEXT_FOR_SUPPLIERS + "]";
+
+    private final String contactsLink = "//a[@title='Контакты']";
 }

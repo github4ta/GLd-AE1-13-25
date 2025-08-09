@@ -9,4 +9,7 @@ public class CartPage {
                     "/following-sibling::span[contains(text(), 'Выбрать всё')]";
     private final String CHECKBOX_LABEL_SELECT_ALL =
             "//input[@type='checkbox']/following-sibling::span[contains(text(), 'Выбрать всё')]";
+
+    private final String promotionsButtonEmptyCart = "//div[contains(@class, 'cart-empty__actions')]//a[text()='Акции']";
+    private final String totalItemsCount = "//div[contains(@class, 'checkout-total__main-count')]";
 }

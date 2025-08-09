@@ -3,6 +3,7 @@ package by.itacademy;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.Assertions;
 
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class CalculatorTest {
     private Calculator calculator;
 
@@ -18,6 +19,7 @@ public class CalculatorTest {
     }
 
     @Test
+    @Order(3)
     @DisplayName("Проверка метода сложения 2 + 5 = 7")
     public void testAdd() {
         System.out.println("Проверка метода сложения 2 + 5 = 7");
@@ -27,6 +29,7 @@ public class CalculatorTest {
     }
 
     @Test
+    @Order(1)
     @DisplayName("Проверка метода вычитания 8 - 5 = 3")
     public void testSubtract() {
         System.out.println("Проверка метода вычитания 8 - 5 = 3");
@@ -36,6 +39,7 @@ public class CalculatorTest {
     }
 
     @Test
+    @Order(2)
     @DisplayName("Проверка метода умножения 8 * 5 = 40")
     public void testMultiply() {
         System.out.println("Проверка метода умножения 8 * 5 = 40");
@@ -45,6 +49,7 @@ public class CalculatorTest {
     }
 
     @Test
+    @Order(4)
     @DisplayName("Проверка метода деления 8 / 4 = 2")
     public void testDivide() {
         System.out.println("Проверка метода деления 8 / 4 = 2");
@@ -58,6 +63,4 @@ public class CalculatorTest {
     public void afterEach() {
         System.out.println("@AfterEach");
     }
-
-
 }

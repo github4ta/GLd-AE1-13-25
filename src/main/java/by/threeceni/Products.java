@@ -298,15 +298,11 @@ public class Products {
     }
 
     public static int countProductsWithNameCaramel(List<Product> productList) {
-        int caramelCount = 0;
         String keyword = "карамель";
 
-        for (Product product : productList) {
-            if (product.getName() != null && product.getName().toLowerCase().contains(keyword)) {
-                caramelCount++;
-            }
-        }
-        return caramelCount;
+        return (int) productList.stream()
+                .filter(product -> product.getName() != null && product.getName().toLowerCase().contains(keyword))
+                .count();
     }
 
     public static Stream<Product> countProductsWithNameIceCreamOrDessertAndFrozen(List<Product> productList) {
