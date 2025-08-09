@@ -12,4 +12,5 @@ public class CartPage {
 
     private final String promotionsButtonEmptyCart = "//div[contains(@class, 'cart-empty__actions')]//a[text()='Акции']";
     private final String totalItemsCount = "//div[contains(@class, 'checkout-total__main-count')]";
+    private final String TOTAL_SUM_TITLE = "//div[@class='cart_prices__total__Gtyvn']/span[1]";
 }
