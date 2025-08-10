@@ -16,4 +16,8 @@ public class CartPage {
 
     private final String BUTTON_GO_TO_THE_MAIN_PAGE = "//button[@class = 'btn_btn__jx6SQ btn_btn_colour_black__wifsv btn_btn_size_medium__ugU8B btn_btn_type_secondary__F_KB1 empty_button__uixo_']";
     private final String BUTTON_SELECT_METHOD_OF_RECEIPT = "//button[@class = 'btn_btn__jx6SQ btn_btn_colour_primary___02d8 btn_btn_block__RfM75 order-button_button__I6guD']";
+
+    private final String EMPTY_DESCRIPTION = "//span[@class='empty_description__KDhZM']";
+    private final String BUTTON_PRIMARY = "//button[@class='btn_btn__jx6SQ btn_btn_colour_primary___02d8 " +
+                                           "btn_btn_block__RfM75 order-button_button__I6guD']";
 }

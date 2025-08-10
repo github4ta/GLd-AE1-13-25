@@ -16,4 +16,7 @@ public class HomePage {
 
     private final String FOOTER_TEXT_ABOUT_SERVICE = "//a[text() = 'О сервисе']";
     private final String FOOTER_TEXT_AGREEMENT_CREDIT_RESOURCES = "//a[text() = 'Соглашение о кредитных ресурсах']";
+
+    private final String ACTION_BUTTON_BADGE = "//a[@class='actions_action__button__ptOha']";
+    private final String FOOTER_LINK_INFORMATION_HELP = "//a[@href='https://emall.by/information/help/132']";
 }
