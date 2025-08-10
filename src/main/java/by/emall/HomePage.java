@@ -14,5 +14,6 @@ public class HomePage {
     private final String HEADER_LOGIN_LINK="//a[@href='https://emall.by/login?backurl=/']";
     private final String FOOTER_USER_AGREEMENT_LINK="//a[@href='https://api-preprod.emall.by/649008c9c6277_publichnyj-dogovor-emall.pdf']";
 
-
+    private final String FOOTER_TEXT_ABOUT_SERVICE = "//a[text() = 'О сервисе']";
+    private final String FOOTER_TEXT_AGREEMENT_CREDIT_RESOURCES = "//a[text() = 'Соглашение о кредитных ресурсах']";
 }
