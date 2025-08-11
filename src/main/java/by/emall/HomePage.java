@@ -19,4 +19,8 @@ public class HomePage {
 
     private final String ACTION_BUTTON_BADGE = "//a[@class='actions_action__button__ptOha']";
     private final String FOOTER_LINK_INFORMATION_HELP = "//a[@href='https://emall.by/information/help/132']";
+
+    private final String SEARCH_GOODS = "//input[@class='web_search__input__0oHdp']";
+    private final String LINK_BECOME_A_SELLER = "//a[@href='https://seller.emall.by/']";
+    private final String LINK_TIK_TOK = "//a[@href='https://www.tiktok.com/@emall_by']";
 }
