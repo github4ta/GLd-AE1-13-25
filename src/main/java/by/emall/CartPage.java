@@ -22,4 +22,6 @@ public class CartPage {
                                            "btn_btn_block__RfM75 order-button_button__I6guD']";
 
     private final String BUTTON_ADD_ADDRESS = "//button[@class='btn_btn__jx6SQ btn_btn_colour_black__wifsv btn_btn_size_medium__ugU8B btn_btn_type_secondary__F_KB1 btn_btn_block__RfM75']";
+
+    private final String CART_PAGE_AMOUNT_INDEX = "//span[@class='cart_heading__counter__9_OT5']";
 }

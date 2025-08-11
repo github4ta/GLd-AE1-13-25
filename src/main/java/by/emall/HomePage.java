@@ -23,4 +23,7 @@ public class HomePage {
     private final String SEARCH_GOODS = "//input[@class='web_search__input__0oHdp']";
     private final String LINK_BECOME_A_SELLER = "//a[@href='https://seller.emall.by/']";
     private final String LINK_TIK_TOK = "//a[@href='https://www.tiktok.com/@emall_by']";
+
+    private final String LINK_VK = "//a[@href='https://vk.com/public210123351']";
+    private final String FOOTER_BUSINESS_DELIVERY = "//a[@href='https://business.emall.by/']";
 }
