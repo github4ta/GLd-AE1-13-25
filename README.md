@@ -4,7 +4,7 @@
 - Kate Zavizion
 - Hanna Lapitskaya
 - Gleb Tolstik
-- Наталья Лаптенок
+- Natallia Laptsionak
 - Polina Bogdanovich
 - Sergey Galnykin
 - Sergey Klimovich
