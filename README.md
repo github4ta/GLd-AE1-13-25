@@ -1,14 +1,12 @@
 # GLd-AE1-13-25
 - Sergei Tsarik
-- Екатерина Завизион
 - Liudmila Sukhadolskaya
-- Анна Лапицкая
+- Kate Zavizion
+- Hanna Lapitskaya
 - Gleb Tolstik
 - Natallia Laptsionak
 - Polina Bogdanovich
-- Глеб Толстик
-- Natallia Laptsionak
-- Полина Богданович
-- Сергей Галныкин
+- Sergey Galnykin
 - Sergey Klimovich
-- Андрей Трасковский
+- Andrei Traskouski
+- Any Name
