@@ -1,7 +1,7 @@
 # GLd-AE1-13-25
 - Sergei Tsarik
-- Екатерина Завизион
 - Liudmila Sukhadolskaya
+- Kate Zavizion
 - Анна Лапицкая
 - Gleb Tolstik
 - Наталья Лаптенок
