@@ -7,6 +7,7 @@
 - Наталья Лаптенок
 - Polina Bogdanovich
 - Сергей Галныкин
+- Сергей Климович
+- Andrei Traskouski
 - Sergey Klimovich
-- Андрей Трасковский
 - Any Name
