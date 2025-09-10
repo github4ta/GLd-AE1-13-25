@@ -1,11 +1,11 @@
 # GLd-AE1-13-25
-- Сергей Царик
+- Sergei Tsarik
 - Екатерина Завизион
-- Людмила Суходольская
+- Liudmila Sukhadolskaya
 - Hanna Lapitskaya
-- Глеб Толстик
+- Gleb Tolstik
 - Наталья Лаптенок
-- Полина Богданович
+- Polina Bogdanovich
 - Сергей Галныкин
-- Сергей Климович
+- Sergey Klimovich
 - Андрей Трасковский
