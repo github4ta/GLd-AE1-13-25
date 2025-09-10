@@ -2,11 +2,13 @@
 - Sergei Tsarik
 - Екатерина Завизион
 - Liudmila Sukhadolskaya
+- Kate Zavizion
 - Анна Лапицкая
 - Gleb Tolstik
 - Наталья Лаптенок
 - Polina Bogdanovich
 - Sergey Galnykin
 - Sergey Klimovich
+- Andrei Traskouski
 - Андрей Трасковский
 - Any Name
