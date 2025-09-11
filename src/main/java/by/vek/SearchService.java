@@ -29,7 +29,6 @@ public class SearchService {
                 .when()
                 .get(URL)
                 .then().extract().response();
-
     }
 
     public int getResponseStatusCode() {
