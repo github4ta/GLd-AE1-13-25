@@ -11,7 +11,6 @@ public class SearchService {
 
     private final String URL = "https://gate.21vek.by/search-composer/api/v1/search/suggest";
 
-
     private Response response;
 
     public void doRequest(String search) {
