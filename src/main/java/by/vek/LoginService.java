@@ -20,9 +20,9 @@ public class LoginService {
         headers = getHeaders();
 
         response = given()
-                .when()
                 .body(body)
                 .headers(headers)
+                .when()
                 .post(URL);
     }
 
