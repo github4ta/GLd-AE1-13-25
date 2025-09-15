@@ -20,10 +20,10 @@ public class LoginService {
         headers = getHeaders();
 
         response = given()
-                    .body(body)
-                    .headers(headers)
-                    .when()
-                    .post(URL);
+                .body(body)
+                .headers(headers)
+                .when()
+                .post(URL);
     }
 
     public int getResponseStatusCode() {
