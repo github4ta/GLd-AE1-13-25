@@ -1,4 +1,4 @@
-package by.vek;
+package by.vek.ui.pages.home;
 
 public class HomeLocator {
 

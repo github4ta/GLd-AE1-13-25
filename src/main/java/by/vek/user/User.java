@@ -1,4 +1,4 @@
-package by.vek;
+package by.vek.user;
 
 import java.util.Objects;
 

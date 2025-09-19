@@ -1,4 +1,4 @@
-package by.vek;
+package by.vek.ui.pages.account;
 
 public class AccountLocator {
     public static final String TITLE_LOGIN_FORM = "//div[@class='LoginForm_title__OAEXy Text-module__text Text-module__large Text-module__bold']";
