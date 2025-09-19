@@ -1,3 +1,4 @@
+package by.vek;
 
 import java.util.Random;
 
