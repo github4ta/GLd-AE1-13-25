@@ -11,13 +11,13 @@ public class Driver {
     private Driver() {
     }
 
-    public static Driver getDriver() {
+    public static WebDriver getDriver() {
         if(driver == null) {
             driver = new ChromeDriver();
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
         }
-        return (Driver) driver;
+        return driver;
     }
 
     public static void quit(){
