@@ -2,7 +2,6 @@ package by.vek.ui.pages.cart;
 
 import by.vek.ui.driver.Driver;
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -16,11 +15,7 @@ public class CartPage {
     private final WebDriver driver = (WebDriver) Driver.getDriver();
 
     public String getEmptyCartText() {
-        try {
             return getElement(By.xpath(TITLE_CART_IS_EMPTY)).getText();
-        } catch (NoSuchElementException e) {
-            return "";
-        }
     }
 
     public void clickSelectAllCheckbox() {
