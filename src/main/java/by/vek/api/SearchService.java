@@ -1,4 +1,4 @@
-package by.vek;
+package by.vek.api;
 
 import io.restassured.response.Response;
 
