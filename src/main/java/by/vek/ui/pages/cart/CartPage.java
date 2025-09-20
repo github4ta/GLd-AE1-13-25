@@ -5,10 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import static by.vek.ui.pages.cart.CartLocators.CHECKBOX_SELECT_ALL;
-import static by.vek.ui.pages.cart.CartLocators.TOTAL_PRICE_VALUE;
-import static by.vek.ui.pages.cart.CartLocators.BUTTON_PLACE_ORDER;
-import static by.vek.ui.pages.cart.CartLocators.TITLE_CART_IS_EMPTY;
+import static by.vek.ui.pages.cart.CartLocators.*;
 
 public class CartPage {
 
