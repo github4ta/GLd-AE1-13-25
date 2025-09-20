@@ -12,4 +12,6 @@ public class AccountLocator {
     public static final String TITLE_TEXT_RESET_PASSWORD = "//h5[@class='Form-module__formTitle']";
     public static final String BUTTON_BACK = "//button[@data-testid='modalBack']";
     public static final String BUTTON_CLOSE = "//button[@data-testid='modalClose']";
+    public static final String LABEL_TEXT_RESET_PASSWORD_EMAIL = "//div//label[@for='reset-password-email']";
+    public static final String BUTTON_MODULE_SAND = "//button[@class='Button-module__button Button-module__blue-primary']";
 }
