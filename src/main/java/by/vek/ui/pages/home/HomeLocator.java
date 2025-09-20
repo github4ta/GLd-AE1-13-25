@@ -7,4 +7,5 @@ public class HomeLocator {
     public static final String BUTTON_LOGIN = "//button[@data-testid='loginButton']";
     public static final String BUTTON_CART = "//a[@class='headerCartBox headerCartBoxEmpty']";
     public static final String INPUT_CATALOG_SEARCH = "//input[@id='catalogSearch']";
+    public static final String SEARCH_DROPDOWN = "//div[@class='SearchResults_content__lRYQw']";
 }
