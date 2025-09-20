@@ -36,7 +36,7 @@ public class AccountPage {
     }
 
     public void clickButtonRegistration() {
-        driver.findElement(By.xpath(AccountLocator.BUTTON_REGISTRATION)).submit();
+        driver.findElement(By.xpath(AccountLocator.BUTTON_REGISTRATION)).click();
     }
 
     public void clickButtonForgetPassword() {
