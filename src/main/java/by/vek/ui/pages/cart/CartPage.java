@@ -12,7 +12,7 @@ public class CartPage {
     private final WebDriver driver = (WebDriver) Driver.getDriver();
 
     public String getEmptyCartText() {
-            return getElement(By.xpath(TITLE_CART_IS_EMPTY)).getText();
+        return getElement(By.xpath(TITLE_CART_IS_EMPTY)).getText();
     }
 
     public void clickSelectAllCheckbox() {
