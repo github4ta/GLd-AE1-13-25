@@ -1,6 +1,5 @@
 package by.vek.ui.pages.cart;
 
-import by.vek.ui.driver.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,10 +14,11 @@ public class CartPage {
 
     private static final int WAIT_TIMEOUT = 10;
 
-    private final WebDriver driver = (WebDriver) Driver.getDriver();
+    private final WebDriver driver;
     private final WebDriverWait wait;
 
-    public CartPage() {
+    public CartPage(WebDriver driver) {
+        this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT));
     }
 
