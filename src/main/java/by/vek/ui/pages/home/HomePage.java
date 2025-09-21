@@ -7,7 +7,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 import java.util.logging.LogManager;
-import java.util.logging.Logger;
 
 public class HomePage {
 
@@ -15,13 +14,13 @@ public class HomePage {
     }
 
     WebDriver driver = Driver.getDriver();
-    private static final Logger logger = LogManager.getLogger();
+    private static final LOGGER = LogManager.getLogger();
 
     public HomePage clickAcceptCookie() {
         try {
             driver.findElement(By.xpath(HomeLocator.BUTTON_ACCEPT_COOKIES)).click();
         } catch (TimeoutException | NoSuchElementException e) {
-            logger.info("There wasn't cookie banner. Cookie banner wasn't closed");
+            LOGGER.info("There wasn't cookie banner. Cookie banner wasn't closed");
         }
         return this;
     }
