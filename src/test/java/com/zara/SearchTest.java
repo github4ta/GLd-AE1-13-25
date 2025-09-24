@@ -20,7 +20,7 @@ public class SearchTest {
         SearchPage searchPage = new SearchPage();
         searchPage.sendKeysInputSearch("qwertyu");
 
-        Assertions.assertEquals("Ничего не найдено", searchPage.getNotFoundText());
+        Assertions.assertEquals("НИЧЕГО НЕ НАЙДЕНО", searchPage.getNotFoundText());
 
         Driver.quit();
     }

@@ -14,10 +14,18 @@ public class BasePage {
     }
 
     public void clickButtonAcceptCookies() {
-        Driver.getDriver().findElement(By.xpath(BUTTON_ACCEPT_COOKIES)).click();
+        try {
+            Driver.getDriver().findElement(By.xpath(BUTTON_ACCEPT_COOKIES)).click();
+        } catch (Exception e) {
+
+        }
     }
 
     public void clickButtonCloseLocation() {
-        Driver.getDriver().findElement(By.xpath(BUTTON_CLOSE_LOCATION)).click();
+        try {
+            Driver.getDriver().findElement(By.xpath(BUTTON_CLOSE_LOCATION)).click();
+        } catch (Exception e) {
+
+        }
     }
 }
