@@ -1,4 +1,4 @@
-package com.zara;
+package com.zara.ui;
 
 import com.zara.driver.Driver;
 import com.zara.pages.HomePage;
