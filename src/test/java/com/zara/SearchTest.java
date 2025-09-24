@@ -27,6 +27,14 @@ public class SearchTest {
         Assertions.assertEquals("НИЧЕГО НЕ НАЙДЕНО", searchPage.getNotFoundText());
     }
 
+    @Test
+    public void test2(){
+        SearchPage searchPage= new SearchPage();
+        searchPage.sendKeysInputSearch("ТРИКОТАЖНЫЙ БОМБЕР С РОМБАМИ");
+
+        Assertions.assertEquals("ТРИКОТАЖНЫЙ БОМБЕР С РОМБАМИ", searchPage.getProductTitles().get(0));
+    }
+
     @AfterEach
     public void tearDown() {
         Driver.quit();
