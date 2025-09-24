@@ -2,6 +2,7 @@ package com.zara.pages;
 
 import com.zara.driver.Driver;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 
 import java.util.ArrayList;
@@ -13,7 +14,7 @@ public class SearchPage {
     private static String PRODUCT_TITLE = "//div[@class='product-grid-product-info__main-info']//h3";
 
     public static void sendKeysInputSearch(String searchText) {
-        Driver.getDriver().findElement(By.xpath(INPUT_SEARCH)).sendKeys(searchText);
+        Driver.getDriver().findElement(By.xpath(INPUT_SEARCH)).sendKeys(searchText + Keys.ENTER);
     }
 
     public static String getNotFoundText() {
