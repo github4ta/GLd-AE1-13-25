@@ -1,4 +1,4 @@
-package by.vek;
+package com.zara;
 
 public class AnyTest {
 }
