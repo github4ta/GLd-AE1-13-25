@@ -1,6 +1,7 @@
 package by.vek.ui.pages.home;
 
 import by.vek.ui.driver.Driver;
+import by.vek.ui.pages.BasePage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
@@ -9,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class HomePage {
+public class HomePage extends BasePage {
 
     public HomePage() {
     }
