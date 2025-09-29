@@ -18,6 +18,11 @@ public class HomePage extends BasePage {
     WebDriver driver = Driver.getDriver();
     private static final Logger LOGGER = LogManager.getLogger();
 
+    public HomePage openHomePage() {
+        openSite();
+        return this;
+    }
+
     public HomePage clickAcceptCookie() {
         try {
             driver.findElement(By.xpath(HomeLocator.BUTTON_ACCEPT_COOKIES)).click();

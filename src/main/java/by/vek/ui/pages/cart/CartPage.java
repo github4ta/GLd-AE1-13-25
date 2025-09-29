@@ -22,6 +22,14 @@ public class CartPage {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT));
     }
 
+    public String getCartTitle() {
+        return getElement(By.xpath(TITLE_CART)).getText();
+    }
+
+    public String getTextEmptyBasket() {
+        return getElement(By.xpath(TEXT_EMPTY_BASKET)).getText();
+    }
+
     public String getEmptyCartText() {
         return getElement(By.xpath(TITLE_CART_IS_EMPTY)).getText();
     }
@@ -44,5 +52,14 @@ public class CartPage {
 
     private WebElement getVisibleElement(By locator) {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
+    public String getCurrentURL() {
+        return driver.getCurrentUrl();
+    }
+
+    public void waitUntilOnCartPage() {
+        wait.until(ExpectedConditions.urlContains("/order/"));
+        wait.until(ExpectedConditions.urlToBe(CART_URL));
     }
 }

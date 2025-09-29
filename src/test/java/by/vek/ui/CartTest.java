@@ -1,4 +1,47 @@
 package by.vek.ui;
 
-public class CartTest {
+import by.vek.logger.BaseLogger;
+import by.vek.ui.driver.Driver;
+import by.vek.ui.pages.cart.CartPage;
+import by.vek.ui.pages.home.HomePage;
+import org.junit.jupiter.api.*;
+
+public class CartTest extends BaseLogger {
+    @BeforeEach
+    public void openCartPage() {
+        HomePage homePage = new HomePage();
+        homePage.openHomePage()
+                .clickAcceptCookie()
+                .clickCart();
+    }
+
+    @Test
+    @DisplayName("\"Корзина\" title is displayed")
+    public void cartTitleIsVisible() {
+        CartPage cartPage = new CartPage(Driver.getDriver());
+        Assertions.assertEquals("Корзина", cartPage.getCartTitle());
+        logger.info("Running SearchTest, test1: \"Корзина\" title is displayed");
+    }
+
+    @Test
+    @DisplayName("\"Вы можете выбрать товары в каталоге или воспользоваться поиском.\" title is displayed")
+    public void emptyCartShowsSearchSuggestion() {
+        CartPage cartPage = new CartPage(Driver.getDriver());
+        Assertions.assertEquals("Вы можете выбрать товары в каталоге или воспользоваться поиском.", cartPage.getTextEmptyBasket());
+        logger.info("Running SearchTest, test2: \"Вы можете выбрать товары в каталоге или воспользоваться поиском.\" title is displayed\"");
+    }
+
+    @Test
+    @DisplayName("The address in the address bar matches https://www.21vek.by/order/.")
+    public void openCartNavigatesToOrderUrl() {
+        CartPage cartPage = new CartPage(Driver.getDriver());
+        cartPage.waitUntilOnCartPage();
+        Assertions.assertEquals("https://www.21vek.by/order/", cartPage.getCurrentURL());
+        logger.info("Running SearchTest, test3: The address in the address bar matches https://www.21vek.by/order/");
+    }
+
+    @AfterEach
+    public void tearDown() {
+        Driver.quit();
+    }
 }
