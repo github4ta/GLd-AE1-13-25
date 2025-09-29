@@ -9,4 +9,5 @@ public class CartLocators {
     public static final String TITLE_ITEM_NAME = "//div[contains(@class,'BasketItem_item__')]//a[contains(@class,'BasketItem_title')][1]";
     public static final String TITLE_CART = "//button[@data-testid='basket-tab']//span[@class='Tabs-module__tabTitleWrapper']";
     public static final String TEXT_EMPTY_BASKET = "//p[@class='EmptyBasket_emptyText__6mjgy Text-module__text Text-module__caption']";
+    public static final String CART_URL = "https://www.21vek.by/order/";
 }

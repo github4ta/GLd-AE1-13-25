@@ -15,14 +15,9 @@ public class CartTest extends BaseLogger {
                 .clickCart();
     }
 
-    @AfterEach
-    public void tearDown() {
-        Driver.quit();
-    }
-
     @Test
     @DisplayName("\"Корзина\" title is displayed")
-    public void test1() {
+    public void cartTitleIsVisible() {
         CartPage cartPage = new CartPage(Driver.getDriver());
         Assertions.assertEquals("Корзина", cartPage.getCartTitle());
         logger.info("Running SearchTest, test1: \"Корзина\" title is displayed");
@@ -30,7 +25,7 @@ public class CartTest extends BaseLogger {
 
     @Test
     @DisplayName("\"Вы можете выбрать товары в каталоге или воспользоваться поиском.\" title is displayed")
-    public void test2() {
+    public void emptyCartShowsSearchSuggestion() {
         CartPage cartPage = new CartPage(Driver.getDriver());
         Assertions.assertEquals("Вы можете выбрать товары в каталоге или воспользоваться поиском.", cartPage.getTextEmptyBasket());
         logger.info("Running SearchTest, test2: \"Вы можете выбрать товары в каталоге или воспользоваться поиском.\" title is displayed\"");
@@ -38,9 +33,15 @@ public class CartTest extends BaseLogger {
 
     @Test
     @DisplayName("The address in the address bar matches https://www.21vek.by/order/.")
-    public void test3() {
+    public void openCartNavigatesToOrderUrl() {
         CartPage cartPage = new CartPage(Driver.getDriver());
+        cartPage.waitUntilOnCartPage();
         Assertions.assertEquals("https://www.21vek.by/order/", cartPage.getCurrentURL());
         logger.info("Running SearchTest, test3: The address in the address bar matches https://www.21vek.by/order/");
+    }
+
+    @AfterEach
+    public void tearDown() {
+        Driver.quit();
     }
 }

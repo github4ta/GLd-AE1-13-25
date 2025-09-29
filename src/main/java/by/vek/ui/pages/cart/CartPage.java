@@ -17,9 +17,6 @@ public class CartPage {
     private final WebDriver driver;
     private final WebDriverWait wait;
 
-//    public CartPage() {
-//    }
-
     public CartPage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT));
@@ -59,5 +56,10 @@ public class CartPage {
 
     public String getCurrentURL() {
         return driver.getCurrentUrl();
+    }
+
+    public void waitUntilOnCartPage() {
+        wait.until(ExpectedConditions.urlContains("/order/"));
+        wait.until(ExpectedConditions.urlToBe(CART_URL));
     }
 }
