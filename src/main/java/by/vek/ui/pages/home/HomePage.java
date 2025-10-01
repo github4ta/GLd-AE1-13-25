@@ -38,6 +38,10 @@ public class HomePage extends BasePage {
 
     }
 
+    public void clickAccountButton() {
+        driver.findElement(By.xpath(HomeLocator.BUTTON_ACCOUNT)).click();
+    }
+
     public void clickCart() {
         driver.findElement(By.xpath(HomeLocator.BUTTON_CART)).click();
     }
