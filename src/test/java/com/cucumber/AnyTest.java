@@ -6,7 +6,7 @@ public class AnyTest {
 
     @Test
     public void testLogin() {
-        PageObject po = new PageObject();
+        PageStep po = new PageStep();
         po.openSite();
         po.clickLogin();
         po.fillEmail("test@test.com");

@@ -1,9 +1,11 @@
 package com.cucumber;
 
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.jupiter.api.Assertions;
 
-public class PageObject {
+public class PageStep {
 
     @Given("User opens site")
     public void openSite() {
@@ -23,5 +25,14 @@ public class PageObject {
     @When("User clicks button Submit")
     public void clickSubmit() {
         System.out.println("Click Submit");
+    }
+
+    @Then("User logins into site")
+    public void checkUserLoginsIntoSite() {
+        Assertions.assertEquals("Welcome User", getAuthorizedUserPageTitleText());
+    }
+
+    private String getAuthorizedUserPageTitleText() {
+        return "Welcome User";
     }
 }
