@@ -6,7 +6,7 @@ Feature: Test Login form
     And User clicks button Login
     When User fills Email "test@test.com"
     And User clicks button Submit
-    Then
+    Then User opens site
 
   Scenario: User can fill empty Email and submit for
     Given User opens site

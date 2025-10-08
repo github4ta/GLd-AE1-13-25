@@ -32,7 +32,16 @@ public class PageStep {
         Assertions.assertEquals("Welcome User", getAuthorizedUserPageTitleText());
     }
 
+    @Then("User sees error email message")
+    public void checkUserSeesErrorEmailMessage() {
+        Assertions.assertEquals("Email is not valid", getAuthorizedUserPageTitleText());
+    }
+
     private String getAuthorizedUserPageTitleText() {
         return "Welcome User";
+    }
+
+    private String getErrorText() {
+        return "Email is not valid";
     }
 }
