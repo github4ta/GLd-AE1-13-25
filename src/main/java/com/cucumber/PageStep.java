@@ -34,7 +34,7 @@ public class PageStep {
 
     @Then("User sees error email message")
     public void checkUserSeesErrorEmailMessage() {
-        Assertions.assertEquals("Email is not valid", getAuthorizedUserPageTitleText());
+        Assertions.assertEquals("Email is not valid", getErrorText());
     }
 
     private String getAuthorizedUserPageTitleText() {
@@ -42,6 +42,6 @@ public class PageStep {
     }
 
     private String getErrorText() {
-        return "Email is not valid";
+        return "Email is empty";
     }
 }

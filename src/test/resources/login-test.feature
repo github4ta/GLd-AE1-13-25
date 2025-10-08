@@ -13,4 +13,4 @@ Feature: Test Login form
     And User clicks button Login
     When User fills Email ""
     And User clicks button Submit
-    Then
+    Then User sees error email message
