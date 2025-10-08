@@ -15,7 +15,7 @@ public class PageObject {
         System.out.println("Click Login");
     }
 
-    @When("User fills Email {email}")
+    @When("User fills Email {string}")
     public void fillEmail(String email) {
         System.out.printf("Fill Email - \n", email);
     }
