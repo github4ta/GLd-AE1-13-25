@@ -9,6 +9,6 @@ Feature: Test Login form
 
   Scenario: User can fill empty Email and submit for
     Given User opens site
-    When User clicks button Login
-    And User fills Email
+    And User clicks button Login
+    When User fills Email
     And User clicks button Submit
