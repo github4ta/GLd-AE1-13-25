@@ -9,7 +9,7 @@ public class AnyTest {
         PageObject po = new PageObject();
         po.openSite();
         po.clickLogin();
-        po.fillEmail();
+        po.fillEmail("test@test.com");
         po.clickSubmit();
     }
 }

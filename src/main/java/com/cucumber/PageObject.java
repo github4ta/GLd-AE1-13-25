@@ -15,9 +15,9 @@ public class PageObject {
         System.out.println("Click Login");
     }
 
-    @When("User fills Email")
-    public void fillEmail() {
-        System.out.printf("Fill Email - \n");
+    @When("User fills Email {email}")
+    public void fillEmail(String email) {
+        System.out.printf("Fill Email - \n", email);
     }
 
     @When("User clicks button Submit")
